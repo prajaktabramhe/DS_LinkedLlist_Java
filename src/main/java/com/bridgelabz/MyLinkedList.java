@@ -13,6 +13,7 @@ public class MyLinkedList
 
     public void add(INode newNode)
     {
+
         if (this.tail == null)
         {
             this.tail = newNode;
@@ -26,6 +27,21 @@ public class MyLinkedList
             INode tempNode = this.head;
             this.head = newNode;
             this.head.setNext(tempNode);
+        }
+    }
+    public void append(INode myNode)
+    {
+        if (this.head == null)
+        {
+            this.head = myNode;
+        }
+        if (this.tail == null)
+        {
+            this.tail = myNode;
+        } else
+        {
+            this.tail.setNext(myNode);
+            this.tail = myNode;
         }
     }
     public void printMyNodes()
