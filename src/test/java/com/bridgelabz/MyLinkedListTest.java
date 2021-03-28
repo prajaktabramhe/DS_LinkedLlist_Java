@@ -21,7 +21,8 @@ public class MyLinkedListTest
 
     }
     @Test
-    public void given3NumbersWhenAddedToLinkedListShouldBeAddedToLast() {
+    public void given3NumbersWhenAddedToLinkedListShouldBeAddedToLast()
+    {
         MyNode<Integer> myFirstNode = new MyNode<>(56);
         MyNode<Integer> mySecondNode = new MyNode<>(30);
         MyNode<Integer> myThirdNode = new MyNode<>(70);
@@ -37,7 +38,8 @@ public class MyLinkedListTest
     }
 
     @Test
-    public void given3NumbersWhenInsertingSecondInBetweenShouldPassLinkedList() {
+    public void given3NumbersWhenInsertingSecondInBetweenShouldPassLinkedList()
+    {
         MyNode<Integer> myFirstNode = new MyNode<>(56);
         MyNode<Integer> mySecondNode = new MyNode<>(30);
         MyNode<Integer> myThirdNode = new MyNode<>(70);
@@ -52,7 +54,8 @@ public class MyLinkedListTest
         Assertions.assertTrue(result);
     }
     @Test
-    public void givenFirstElementWhenDeleteShouldPassLinkedListResult() {
+    public void givenFirstElementWhenDeleteShouldPassLinkedListResult()
+    {
         MyNode<Integer> myFirstNode = new MyNode<>(56);
         MyNode<Integer> mySecondNode = new MyNode<>(30);
         MyNode<Integer> myThirdNode = new MyNode<>(70);
@@ -68,7 +71,8 @@ public class MyLinkedListTest
     }
 
     @Test
-    public void givenLastElement_WhenDeleted_ShouldPassLinkedListTest() {
+    public void givenLastElement_WhenDeleted_ShouldPassLinkedListTest()
+    {
         MyNode<Integer> myFirstNode = new MyNode<>(56);
         MyNode<Integer> mySecondNode = new MyNode<>(30);
         MyNode<Integer> myThirdNode = new MyNode<>(70);
@@ -83,7 +87,8 @@ public class MyLinkedListTest
         Assertions.assertTrue(result);
     }
     @Test
-    public void givenElementToSearchWhenMatchShouldPassLinkedListResult() {
+    public void givenElementToSearchWhenMatchShouldPassLinkedListResult()
+    {
         MyNode<Integer> myFirstNode = new MyNode<>(56);
         MyNode<Integer> mySecondNode = new MyNode<>(30);
         MyNode<Integer> myThirdNode = new MyNode<>(70);
@@ -98,7 +103,8 @@ public class MyLinkedListTest
         Assertions.assertTrue(result);
     }
     @Test
-    public void given4NumbersWhenInsertingThirdInBetweenShouldPassLinkedListResult() {
+    public void given4NumbersWhenInsertingThirdInBetweenShouldPassLinkedListResult()
+    {
         MyNode<Integer> myFirstNode = new MyNode<>(56);
         MyNode<Integer> mySecondNode = new MyNode<>(30);
         MyNode<Integer> myThirdNode = new MyNode<>(40);
@@ -116,5 +122,4 @@ public class MyLinkedListTest
                 myLinkedList.tail.equals(myFourthNode);
         Assertions.assertTrue(result);
     }
-
 }
